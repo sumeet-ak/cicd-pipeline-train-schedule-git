@@ -2,15 +2,13 @@ pipeline {
   agent any
   stages {
     stage ('Build') {
-      step {
+      steps {
         echo 'Building npm application'
-      }
-      step {
         sh './gradlew Build'
       }
-    }
+          }
     stage ('Start application') {
-      step {
+      steps {
         echo 'running application'
         sh 'npm start'
       }
