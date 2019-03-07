@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage ('Build') {
       steps {
-        echo "Build"
+        echo "Build Slumeet"
       }
     }
     stage ('Run'){
       steps {
-        echo "run"
+        echo "run Sumeet"
       }
     }
   }
