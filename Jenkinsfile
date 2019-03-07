@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage ('Build') {
       steps {
-        echo "Build Slumeet"
+        echo "npm version - sumeet"
+        sh 'npm --vesion'
       }
     }
     stage ('Run'){
